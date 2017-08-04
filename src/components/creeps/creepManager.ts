@@ -19,7 +19,7 @@ export function run(room: Room): void {
   _loadCreeps(room);
   _buildMissingCreeps(room);
 
-  _.each(creeps, (creep: Creep) => {
+  _.each(creeps, (creep) => {
     if (creep.memory.role === "harvester") {
       harvester.run(creep);
     }
